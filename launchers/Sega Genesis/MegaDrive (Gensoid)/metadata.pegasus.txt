@@ -1,0 +1,10 @@
+collection: Sega Genesis/MegaDrive
+shortname: megadrive
+extensions: 32x, 68k, bin, bms, chd, cue, gen, gg, iso, m3u, md, mdx, pco, sg, sgd, smd, sms
+launch: am start
+  -n com.androidemu.gens/.EmulatorActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

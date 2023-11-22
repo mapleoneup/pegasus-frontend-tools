@@ -1,0 +1,12 @@
+collection: PC-98
+shortname: pc_98
+extensions: 2hd, 88d, 98d, cmd, d88, d98, dup, fdd, fdi, hdd, hdi, hdm, nhd, tfd, thd, xdf, zip
+launch: am start
+  -n com.retroarch/.browser.retroactivity.RetroActivityFuture
+  -e ROM {file.path}
+  -e LIBRETRO /data/data/com.retroarch/cores/nekop2_libretro_android.so
+  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg
+  -e QUITFOCUS
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

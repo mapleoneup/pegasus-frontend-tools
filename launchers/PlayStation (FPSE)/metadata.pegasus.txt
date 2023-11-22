@@ -1,0 +1,10 @@
+collection: PlayStation
+shortname: psx
+extensions: bin, cbn, ccd, chd, cue, ecm, exe, img, iso, m3u, mdf, mds, pbp, psexe, psf, toc
+launch: am start
+  -n com.emulator.fpse/.Main
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

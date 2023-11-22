@@ -1,0 +1,10 @@
+collection: Jaguar
+shortname: atarijaguar
+extensions: abs, bin, cof, j64, jag, prg, rom
+launch: am start
+  -n ru.vastness.altmer.iratajaguar/.MainActivity
+  -a android.intent.action.VIEW
+  -e rom "{file.path}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

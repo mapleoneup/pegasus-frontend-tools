@@ -1,0 +1,10 @@
+collection: Sega Master System
+shortname: mastersystem
+extensions: bin, bms, col, gg, rom, sg, sms
+launch: am start
+  -n com.androidemu.gg/.EmulatorActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

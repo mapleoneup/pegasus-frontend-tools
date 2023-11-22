@@ -1,0 +1,12 @@
+collection: MSX/SVI/ColecoVision/SG-1000
+shortname: msx
+extensions: cas, col, dsk, m3u, mx1, mx2, ri, rom, sc, sg
+launch: am start
+  -n com.retroarch/.browser.retroactivity.RetroActivityFuture
+  -e ROM {file.path}
+  -e LIBRETRO /data/data/com.retroarch/cores/bluemsx_libretro_android.so
+  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg
+  -e QUITFOCUS
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

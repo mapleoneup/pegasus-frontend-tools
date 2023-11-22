@@ -1,0 +1,12 @@
+collection: PC-8000 / PC-8800 series
+shortname: pc_88
+extensions: d88, m3u, u88
+launch: am start
+  -n com.retroarch/.browser.retroactivity.RetroActivityFuture
+  -e ROM {file.path}
+  -e LIBRETRO /data/data/com.retroarch/cores/quasi88_libretro_android.so
+  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg
+  -e QUITFOCUS
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

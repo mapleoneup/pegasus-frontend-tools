@@ -1,0 +1,10 @@
+collection: Atari 2600
+shortname: atari2600
+extensions: a26, bin
+launch: am start
+  -n com.explusalpha.A2600Emu/com.imagine.BaseActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

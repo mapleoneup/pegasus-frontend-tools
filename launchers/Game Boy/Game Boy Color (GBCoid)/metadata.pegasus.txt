@@ -1,0 +1,10 @@
+collection: Game Boy/Game Boy Color
+shortname: gb
+extensions: bin, cgb, dmg, gb, gbc, gbs, rom, sgb
+launch: am start
+  -n com.androidemu.gbc/.EmulatorActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

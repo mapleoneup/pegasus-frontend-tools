@@ -1,0 +1,10 @@
+collection: Nintendo Entertainment System
+shortname: nes
+extensions: bin, fds, nes, nsf, qd, rom, unf, unif
+launch: am start
+  -n com.androidemu.nes/.EmulatorActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

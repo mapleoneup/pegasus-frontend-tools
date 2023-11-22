@@ -1,0 +1,10 @@
+collection: Super Nintendo Entertainment System
+shortname: snes
+extensions: bml, bs, bsx, dx2, fig, gb, gbc, gd3, gd7, rom, sfc, smc, st, swc
+launch: am start
+  -n com.explusalpha.Snes9xPlus/com.imagine.BaseActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

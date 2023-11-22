@@ -1,0 +1,10 @@
+collection: Neo Geo Pocket (Color)
+shortname: neo_geo_pocket
+extensions: ngc, ngp, ngpc, npc
+launch: am start
+  -n com.explusalpha.NgpEmu/com.imagine.BaseActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

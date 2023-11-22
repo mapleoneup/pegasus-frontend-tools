@@ -1,0 +1,10 @@
+collection: Nintendo 64
+shortname: n64
+extensions: bin, n64, ndd, u1, v64, z64
+launch: am start
+  -n paulscode.android.mupen64plusae/.MainActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

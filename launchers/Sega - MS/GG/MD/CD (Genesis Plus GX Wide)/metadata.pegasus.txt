@@ -1,0 +1,12 @@
+collection: Sega 8/16-bit (Various)
+shortname: megadrive
+extensions: 68k, bin, bms, chd, cue, gen, gg, iso, m3u, md, mdx, sg, sgd, smd, sms
+launch: am start
+  -n com.retroarch/.browser.retroactivity.RetroActivityFuture
+  -e ROM {file.path}
+  -e LIBRETRO /data/data/com.retroarch/cores/genesis_plus_gx_wide_libretro_android.so
+  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg
+  -e QUITFOCUS
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

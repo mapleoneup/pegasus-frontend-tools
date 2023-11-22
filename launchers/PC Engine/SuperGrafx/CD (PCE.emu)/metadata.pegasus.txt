@@ -1,0 +1,10 @@
+collection: PC Engine/SuperGrafx/CD
+shortname: pcengine
+extensions: ccd, chd, cue, m3u, pce, sgx, toc
+launch: am start
+  -n com.explusalpha.PceEmu/com.imagine.BaseActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

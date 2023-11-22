@@ -1,0 +1,12 @@
+collection: Sony PlayStation 2
+shortname: ps2
+extensions: bin, chd, ciso, cso, dump, elf, gz, img, iso, m3u, mdf, nrg
+launch: am start
+  -n com.retroarch/.browser.retroactivity.RetroActivityFuture
+  -e ROM {file.path}
+  -e LIBRETRO /data/data/com.retroarch/cores/pcsx2_libretro_android.so
+  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg
+  -e QUITFOCUS
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

@@ -1,0 +1,10 @@
+collection: Nintendo DS
+shortname: nds
+extensions: bin, dsi, nds
+launch: am start
+  -n com.dsemu.drastic/.DraSticActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

@@ -1,0 +1,10 @@
+collection: Arcade
+shortname: mame
+extensions: 7z, chd, cmd, zip
+launch: am start
+  -n com.seleuco.mame4droid/.MAME4droid
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

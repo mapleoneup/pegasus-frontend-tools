@@ -1,0 +1,12 @@
+collection: MPV
+shortname: movie
+extensions: 3g2, 3gp, asf, avi, divx, f4f, f4v, flac, flv, m2p, m2ts, m4a, mkv, mov, mp3, mp4, mpeg, mpg, mxf, ogg, ogm, ps, ts, vob, wav, webm, wma, wmv
+launch: am start
+  -n com.retroarch/.browser.retroactivity.RetroActivityFuture
+  -e ROM {file.path}
+  -e LIBRETRO /data/data/com.retroarch/cores/mpv_libretro_android.so
+  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg
+  -e QUITFOCUS
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

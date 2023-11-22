@@ -1,0 +1,10 @@
+collection: MSX
+shortname: msx
+extensions: cas, col, dsk, fdi, m3u, mx1, mx2, ri, rom, sc, sg
+launch: am start
+  -n com.explusalpha.MsxEmu/com.imagine.BaseActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

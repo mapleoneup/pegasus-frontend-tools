@@ -1,0 +1,12 @@
+collection: Sega 8/16-bit + 32X (Various)
+shortname: megadrive
+extensions: 32x, 68k, bin, chd, cue, gen, gg, iso, m3u, md, pco, sgd, smd, sms
+launch: am start
+  -n com.retroarch/.browser.retroactivity.RetroActivityFuture
+  -e ROM {file.path}
+  -e LIBRETRO /data/data/com.retroarch/cores/picodrive_libretro_android.so
+  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg
+  -e QUITFOCUS
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

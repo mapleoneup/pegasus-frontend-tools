@@ -1,0 +1,10 @@
+collection: Game Boy Advance
+shortname: gba
+extensions: agb, bin, cgb, dmg, gb, gba, gbc, gbz, sgb
+launch: am start
+  -n com.explusalpha.GbaEmu/com.imagine.BaseActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

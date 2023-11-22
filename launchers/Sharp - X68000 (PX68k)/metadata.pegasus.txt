@@ -1,0 +1,12 @@
+collection: Sharp X68000
+shortname: sharp_x68000
+extensions: 2hd, 88d, cmd, d88, dim, dup, hdf, hdm, img, m3u, xdf, zip
+launch: am start
+  -n com.retroarch/.browser.retroactivity.RetroActivityFuture
+  -e ROM {file.path}
+  -e LIBRETRO /data/data/com.retroarch/cores/px68k_libretro_android.so
+  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg
+  -e QUITFOCUS
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

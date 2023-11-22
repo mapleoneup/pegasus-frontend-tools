@@ -1,0 +1,12 @@
+collection: GameCube / Wii
+shortname: gc
+extensions: ciso, dff, dol, elf, gcm, gcz, iso, m3u, rvz, tgc, wad, wbfs
+launch: am start
+  -n com.retroarch/.browser.retroactivity.RetroActivityFuture
+  -e ROM {file.path}
+  -e LIBRETRO /data/data/com.retroarch/cores/dolphin_libretro_android.so
+  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg
+  -e QUITFOCUS
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

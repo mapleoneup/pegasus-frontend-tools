@@ -1,0 +1,10 @@
+collection: Arcade/CPS/Neo-Geo
+shortname: fba
+extensions: 2352, 7z, MODE1, bin, ccd, cue, img, iso, sub, zip
+launch: am start
+  -n com.explusalpha.NeoEmu/com.imagine.BaseActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

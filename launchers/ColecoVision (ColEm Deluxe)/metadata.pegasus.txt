@@ -1,0 +1,10 @@
+collection: ColecoVision
+shortname: colecovision
+extensions: bin, col, cv, rom
+launch: am start
+  -n com.fms.colem.deluxe/com.fms.emulib.MainActivity
+  -a android.intent.action.VIEW
+  -d "{file.uri}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

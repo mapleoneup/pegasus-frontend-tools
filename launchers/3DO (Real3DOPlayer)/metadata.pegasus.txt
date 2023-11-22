@@ -1,0 +1,10 @@
+collection: 3DO
+shortname: 3do
+extensions: bin, chd, cue, iso
+launch: am start
+  -n ru.vastness.altmer.real3doplayer/.MainActivity
+  -a android.intent.action.VIEW
+  -e cd "{file.path}"
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history

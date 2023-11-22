@@ -1,0 +1,12 @@
+collection: C64
+shortname: c64
+extensions: bin, crt, d64, d6z, d71, d7z, d80, d81, d82, d8z, g41, g4z, g64, g6z, gz, p00, prg, t64, tap, x64, x6z, zip
+launch: am start
+  -n com.retroarch/.browser.retroactivity.RetroActivityFuture
+  -e ROM {file.path}
+  -e LIBRETRO /data/data/com.retroarch/cores/x64sdl_libretro_android.so
+  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg
+  -e QUITFOCUS
+  --activity-clear-task
+  --activity-clear-top
+  --activity-no-history
